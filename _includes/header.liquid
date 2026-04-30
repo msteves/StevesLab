@@ -1,6 +1,18 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  {% assign navbar_background_style = "" %}
+  {% if site.navbar_background_gradient %}
+    {% assign navbar_background_style = "--navbar-bg: " | append: site.navbar_background_gradient | append: ";" %}
+  {% elsif site.navbar_background_image %}
+    {% assign navbar_background_image_url = site.navbar_background_image | relative_url %}
+    {% assign navbar_background_style = "--navbar-bg: url('" | append: navbar_background_image_url | append: "');" %}
+  {% endif %}
+  <nav
+    id="navbar"
+    class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
+    role="navigation"
+    {% if navbar_background_style != "" %}style="{{ navbar_background_style }}"{% endif %}
+  >
     <div class="container">
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
