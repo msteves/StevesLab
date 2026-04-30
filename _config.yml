@@ -54,7 +54,7 @@ external_services:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-navbar_background_gradient: # Example: 'linear-gradient(90deg, #ff0080, #7928ca)'
+navbar_background_gradient: 'linear-gradient(90deg, #ff0080, #7928ca)'
 navbar_background_image: # Example: '/assets/img/navbar-bg.jpg'
 footer_fixed: true
 search_enabled: true
