@@ -1,4 +1,13 @@
-<header>
+<header class="navbar-header-wrapper">
+  <div class="header-top">
+    <div class="container">
+      <a href="{{ site.baseurl }}/">
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo">
+      </a>
+      <div class="header-text">Single-molecule and super-resolution microscopy at the University of Illinois at Urbana-Champaign
+</div>
+    </div>
+  </div>
   <!-- Nav Bar -->
   {% assign navbar_background_style = "" %}
   {% if site.navbar_background_gradient %}

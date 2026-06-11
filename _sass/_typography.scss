@@ -4,6 +4,11 @@
 
 @use "variables" as v;
 
+body {
+  font-family: 'Avenir', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
 p,
 h1,
 h2,

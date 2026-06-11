@@ -4,50 +4,6 @@
 
 @use "variables" as v;
 
-.navbar-header-wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 1080;
-}
-
-.header-top {
-  background: #ffffff;
-  border-bottom: 0px solid var(--global-divider-color);
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    padding-bottom: 0;
-
-    a {
-      text-decoration: none;
-
-      img {
-        height: 80px;
-        width: auto;
-        padding-right: 12rem;
-        padding-left: 0; 
-        padding-bottom: 0;
-      }
-    }
-
-    .header-text {
-      color: var(--global-text-color-grey);
-      font-weight: normal;
-      text-align: right;
-    }
-  }
-}
-
-.navbar-header-wrapper .navbar {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
-}
-
 .navbar {
   box-shadow: none;
 }
@@ -67,7 +23,7 @@
   border: 1px solid var(--global-divider-color);
 
   a:not(.active) {
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
   }
 
   a:hover {
@@ -106,26 +62,24 @@
   }
 
   .navbar-brand {
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color-light);
-    font-size: 1.1rem; /* Increased text size */
-    padding: 0.5rem 1rem; /* Increased spacing */
+    color: var(--global-text-color);
 
     &:hover {
-      color: grey;
+      color: var(--global-hover-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-text-color-light);
+    color: var(--global-theme-color);
 
     &:hover {
-      color: grey;
+      color: var(--global-hover-color);
     }
   }
 
@@ -154,13 +108,13 @@
       }
 
       i::before {
-        color: var(--global-text-color-light);
+        color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
       }
 
       &:hover {
         i::before {
-          color: var(--global-text-color-light);
+          color: var(--global-theme-color);
         }
       }
     }
@@ -172,7 +126,7 @@
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-color-light);
+    background-color: var(--global-text-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -211,7 +165,7 @@
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
   /* Fix footprint to prevent navbar shifting when icon changes */
   width: 2rem;
   height: 2rem;
@@ -220,7 +174,7 @@
   justify-content: center;
 
   &:hover {
-    color: var(--global-text-color-light);
+    color: var(--global-hover-color);
   }
 }
 
@@ -234,9 +188,9 @@
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
 
   &:hover {
-    color: var(--global-text-color-light);
+    color: var(--global-hover-color);
   }
 }
