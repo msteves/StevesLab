@@ -44,6 +44,57 @@ body.sticky-bottom-footer {
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples
 
+/* About page adjustments: center text and increase font size for readability */
+.about-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.about-row .profile {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+.about-row .profile img {
+  width: 100%;
+  height: auto;
+}
+
+.about-row .about-content {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem; /* increased base size */
+  line-height: 1.6;
+  max-width: 60ch;
+  padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+  .about-row .about-content {
+    font-size: 1.5rem; /* larger on tablet+ */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-row {
+    flex-direction: column;
+  }
+
+  .about-row .profile {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .about-row .about-content {
+    font-size: 1.15rem; /* slightly larger mobile */
+    padding-top: 0.75rem;
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
