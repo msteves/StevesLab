@@ -22,7 +22,8 @@ layout: default
         {% if page.profile.align == 'left' %}
           <div class="profile" role="region">
             {% if page.profile.image %}
-              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% assign img_name = page.profile.image | split: '/' | last | default: 'singlemolecule_placeholder.jpg' %}
+              {% assign profile_image_path = img_name | prepend: 'assets/img/' %}
               {% if page.profile.image_circular %}
                 {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
               {% else %}
@@ -49,7 +50,8 @@ layout: default
 
           <div class="profile" role="region">
             {% if page.profile.image %}
-              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% assign img_name = page.profile.image | split: '/' | last | default: 'singlemolecule_placeholder.jpg' %}
+              {% assign profile_image_path = img_name | prepend: 'assets/img/' %}
               {% if page.profile.image_circular %}
                 {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
               {% else %}
@@ -76,10 +78,16 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <div class="news-bg-section" style="background-image: url('{{ '/assets/img/3Dmicrotubules.png' | relative_url }}');">
+        <div class="news-bg-inner">
+          <div class="news-content-overlay">
+            <h2 class="news-bg-heading">
+              <a href="{{ '/news/' | relative_url }}">news</a>
+            </h2>
+            {% include news.liquid limit=true %}
+          </div>
+        </div>
+      </div>
     {% endif %}
 
     <!-- Latest posts -->

@@ -47,7 +47,7 @@ body.sticky-bottom-footer {
 /* About page adjustments: center text and increase font size for readability */
 .about-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* vertically center columns (image and text) */
   gap: 1.5rem;
 }
 
@@ -92,6 +92,78 @@ body.sticky-bottom-footer {
   .about-row .about-content {
     font-size: 1.15rem; /* slightly larger mobile */
     padding-top: 0.75rem;
+  }
+}
+
+/******************************************************************************
+ * News section with background image
+ ******************************************************************************/
+
+.news-bg-section {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.news-bg-inner {
+  padding: 8rem  12rem  8rem 2.5rem;
+}
+
+.news-content-overlay {
+  background-color: rgba(10, 10, 20, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+
+  h2 {
+    margin-bottom: 1rem;
+
+    a {
+      color: #ffffff !important;
+    }
+  }
+
+  .news {
+    color: #e8e8e8;
+
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .news-item {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .news-date {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    .news-content {
+      color: #e8e8e8;
+    }
+
+    a.news-title {
+      color: #b8d4ff;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
   }
 }
 

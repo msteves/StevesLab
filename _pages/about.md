@@ -7,7 +7,7 @@ show_title: false
 
 profile:
   align: right
-  image: 2.jpg
+  image: singlemolecule_placeholder.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
 

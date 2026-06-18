@@ -41,6 +41,8 @@
 
       .preview {
         display: inline-block;
+        width: 100%;
+        max-width: 500px;
       }
 
       .abbr {
@@ -69,6 +71,7 @@
 
       .title {
         font-weight: bolder;
+        font-size: 1.1em;
       }
 
       .author {
