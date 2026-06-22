@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://msteves.github.io/sitemap.xml
+Sitemap: https://msteves.github.io/StevesLab//sitemap.xml
