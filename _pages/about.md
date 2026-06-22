@@ -7,7 +7,7 @@ show_title: false
 
 profile:
   align: right
-  image: singlemolecule_placeholder.jpg
+  image: singlemoleculemovie_10Hz.gif
   image_circular: false # crops the image to make it circular
   more_info: 
 
