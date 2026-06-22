@@ -1,21 +1,45 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <ul
-      class="news-list"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw; overflow-y: auto"
-      {% endif %}
-    >
-      {% assign news = site.news | reverse %}
-      {% if include.limit and page.announcements.limit %}
-        {% assign news_limit = page.announcements.limit %}
-      {% else %}
-        {% assign news_limit = news_size %}
-      {% endif %}
+    {% assign news = site.news | where_exp: "item", "item.published != false" | reverse %}
+    {% if include.limit and page.announcements.limit %}
+      {% assign news_limit = page.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+
+    {% if include.limit %}
+      <ul
+        class="news-list"
+        {% if page.announcements.scrollable and news_size > 3 %}
+          style="max-height: 60vw; overflow-y: auto"
+        {% endif %}
+      >
+        {% for item in news limit: news_limit %}
+          <li class="news-item">
+            <span class="news-date">{{ item.date | date: '%b %d, %Y' }}</span>
+            <div class="news-content">
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {% assign current_year = '' %}
       {% for item in news limit: news_limit %}
-        <li class="news-item">
-          <span class="news-date">{{ item.date | date: '%b %d, %Y' }}</span>
+        {% assign item_year = item.date | date: '%Y' %}
+        {% if item_year != current_year %}
+          {% unless forloop.first %}</ul>{% endunless %}
+          <h2 class="news-year">{{ item_year }}</h2>
+          <ul class="news-list">
+          {% assign current_year = item_year %}
+        {% endif %}
+        <li class="news-item news-item-spaced">
+          <span class="news-date">{{ item.date | date: '%b %d' }}</span>
           <div class="news-content">
             {% if item.inline %}
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -25,7 +49,8 @@
           </div>
         </li>
       {% endfor %}
-    </ul>
+      </ul>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}

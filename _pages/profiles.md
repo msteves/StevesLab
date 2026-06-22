@@ -10,19 +10,14 @@ profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
+    image: StevesHeadshot2026crop.png
+    content: about_steves.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>masteves17@gmail.com</p>
+      <p></p>
 ---
+
+<div style="background-color: #f0f8ff; padding: 20px; border-radius: 8px; text-align: center; margin: 20px 0;">
+  <p style="margin: 0; font-size: 1.1em;">Now recruiting postdocs, graduate, and undergraduate students! Reach out to Megan with your interest in <a href="/join">joining</a>.</p>
+</div>

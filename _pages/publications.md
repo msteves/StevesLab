@@ -9,12 +9,63 @@ nav_order: 3
 
 <!-- _pages/publications.md -->
 
-<!-- Bibsearch Feature -->
+<div class="publications-header">
+  <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" class="scholar-link" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-google-scholar"></i>
+    Google Scholar Profile
+  </a>
+</div>
 
-{% include bib_search.liquid %}
+<div class="year-filter" id="yearFilter">
+  <button class="year-btn active" onclick="filterByYear('all')">All Years</button>
+</div>
 
 <div class="publications">
 
 {% bibliography %}
 
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Extract years from bibliography entries (data-year is on parent row div)
+  const years = new Set();
+  document.querySelectorAll('.bibliography li').forEach(entry => {
+    const row = entry.querySelector('.row');
+    if (row) {
+      const year = row.dataset.year;
+      if (year) years.add(year);
+    }
+  });
+
+  // Create year buttons
+  const sortedYears = Array.from(years).sort((a, b) => b - a);
+  const filterDiv = document.getElementById('yearFilter');
+  sortedYears.forEach(year => {
+    const btn = document.createElement('button');
+    btn.className = 'year-btn';
+    btn.textContent = year;
+    btn.onclick = function() { jumpToYear(year); };
+    filterDiv.appendChild(btn);
+  });
+});
+
+function jumpToYear(year) {
+  // Find first entry from that year
+  const firstEntry = Array.from(document.querySelectorAll('.bibliography li')).find(entry => {
+    const row = entry.querySelector('.row');
+    return row && row.dataset.year === year;
+  });
+
+  if (firstEntry) {
+    const headerHeight = document.querySelector('nav')?.offsetHeight || 60;
+    const yOffset = -headerHeight - 20;
+    const y = firstEntry.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+</script>
+
+
+

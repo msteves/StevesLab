@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-08-16 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Megan will join UIUC as an Assistant Professor of Chemistry starting in August. Stay tuned!
