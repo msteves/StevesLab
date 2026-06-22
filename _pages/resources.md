@@ -3,7 +3,7 @@ layout: page
 title: Resources
 permalink: /resources/
 description: Steves Lab Resources
-nav: true
+nav: false
 nav_order: 5
 display_categories: [work, fun]
 horizontal: false

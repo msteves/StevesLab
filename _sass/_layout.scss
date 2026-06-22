@@ -108,7 +108,15 @@ body.sticky-bottom-footer {
 }
 
 .news-bg-inner {
-  padding: 8rem  12rem  8rem 2.5rem;
+  padding: 8rem 12rem 8rem 2.5rem;
+
+  @media (max-width: 767.98px) {
+    padding: 3rem 2rem;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 2rem 1rem;
+  }
 }
 
 .news-content-overlay {

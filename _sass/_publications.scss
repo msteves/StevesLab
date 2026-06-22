@@ -129,6 +129,8 @@
       .title {
         font-weight: bolder;
         font-size: 1.1em;
+        word-break: break-word;
+        overflow-wrap: break-word;
       }
 
       .author,
@@ -166,6 +168,10 @@
       }
 
       .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
@@ -263,6 +269,20 @@
           flex: 1 1 auto;
           text-align: justify;
           margin-left: 0 !important;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        div.abstract.hidden.open {
+          .abstract-content {
+            flex-direction: column !important;
+          }
+
+          .abstract-preview {
+            flex: none !important;
+            min-width: 0 !important;
+            width: 100%;
+          }
         }
       }
     }
