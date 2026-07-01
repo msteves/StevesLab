@@ -3,7 +3,7 @@ layout: page
 title: Research
 permalink: /research/
 description: Steves Lab Research
-nav: true
+nav: false
 nav_order: 1
 display_categories: []
 horizontal: false
