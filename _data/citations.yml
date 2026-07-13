@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-01'
+  last_updated: '2026-07-13'
 papers:
   YwJsYsMAAAAJ:0EnyYjriUFMC:
-    citations: 19
+    citations: 23
     title: Guo. Yu, S. Wu, D. Akinwande, JM Redwing, M. Terrones, JA Robinson
     year: '2023'
   YwJsYsMAAAAJ:2osOgNQ5qMEC:
@@ -30,11 +30,11 @@ papers:
     title: Nonlinear Fourier-Transform Spectroscopy of Single Gold Nanoparticles
     year: '2021'
   YwJsYsMAAAAJ:W7OEmFMy1HYC:
-    citations: 231
+    citations: 233
     title: Active pixel sensor matrix based on monolayer MoS2 phototransistor array
     year: '2022'
   YwJsYsMAAAAJ:WF5omc3nYNoC:
-    citations: 326
+    citations: 332
     title: Recent advances in 2D material theory, synthesis, properties, and applications
     year: '2023'
   YwJsYsMAAAAJ:Y0pCki6q_DkC:
@@ -62,7 +62,7 @@ papers:
     title: Elucidating the Interplay of Optical Function and Structure in Nanomaterials with Nonlinear Optical Microscopy
     year: '2022'
   YwJsYsMAAAAJ:u-x6o8ySG0sC:
-    citations: 58
+    citations: 59
     title: Unexpected near-infrared to visible nonlinear optical properties from 2-D polar metals
     year: '2020'
   YwJsYsMAAAAJ:u5HHmVD_uO8C:
