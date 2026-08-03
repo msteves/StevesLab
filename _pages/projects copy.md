@@ -4,6 +4,7 @@ title: Research
 permalink: /research/
 description: Steves Lab research
 nav: false
+published: false
 nav_order: 2
 display_categories: []
 horizontal: false

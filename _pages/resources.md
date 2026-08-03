@@ -5,6 +5,7 @@ permalink: /resources/
 description: Steves Lab Resources
 nav: false
 nav_order: 5
+published: false
 display_categories: [work, fun]
 horizontal: false
 ---
