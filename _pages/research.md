@@ -7,6 +7,16 @@ nav: true
 nav_order: 1
 display_categories: []
 horizontal: false
+_styles: >
+  .post article h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .post article h3 + p {
+    margin-top: 0;
+  }
 ---
 
 <p>The chemistry of life unfolds in heterogeneous, dynamic environments where nanoscale context and weak interactions shape molecular outcomes. While traditional biochemical approaches emphasize strong and specific binding, transient and nonspecific interactions are now recognized as central to biological regulation and to the adaptive behavior of emerging bio-inspired materials. These weak interactions remain difficult to characterize, however, because their fast dynamics lie beyond the reach of many conventional methods.</p>
