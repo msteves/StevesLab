@@ -412,8 +412,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/StevesLab/books/the_godfather/";
-            },},{id: "news-megan-will-join-uiuc-as-an-assistant-professor-of-chemistry-starting-in-august-stay-tuned",
-          title: 'Megan will join UIUC as an Assistant Professor of Chemistry starting in August....',
+            },},{id: "news-megan-will-join-uiuc-as-an-assistant-professor-of-chemistry-starting-in-august-see-chemistry-dept-news-story-stay-tuned",
+          title: 'Megan will join UIUC as an Assistant Professor of Chemistry starting in August...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
