@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-29'
+  last_updated: '2026-08-07'
 papers:
   YwJsYsMAAAAJ:0EnyYjriUFMC:
-    citations: 30
+    citations: 87
     title: Guo. Yu, S. Wu, D. Akinwande, JM Redwing, M. Terrones, JA Robinson
     year: '2023'
   YwJsYsMAAAAJ:2osOgNQ5qMEC:
@@ -18,7 +18,7 @@ papers:
     title: "Atomic-level structure determines electron\u2013phonon scattering rates in 2-D polar metal heterostructures"
     year: '2021'
   YwJsYsMAAAAJ:Se3iqnhoufwC:
-    citations: 6
+    citations: 7
     title: Direct microsecond wide-field single-molecule tracking and super-resolution mapping via CCD vertical shift
     year: '2025'
   YwJsYsMAAAAJ:Tyk-4Ss8FVUC:
@@ -30,11 +30,11 @@ papers:
     title: Nonlinear Fourier-Transform Spectroscopy of Single Gold Nanoparticles
     year: '2021'
   YwJsYsMAAAAJ:W7OEmFMy1HYC:
-    citations: 236
+    citations: 237
     title: Active pixel sensor matrix based on monolayer MoS2 phototransistor array
     year: '2022'
   YwJsYsMAAAAJ:WF5omc3nYNoC:
-    citations: 341
+    citations: 344
     title: Recent advances in 2D material theory, synthesis, properties, and applications
     year: '2023'
   YwJsYsMAAAAJ:Y0pCki6q_DkC:
@@ -46,7 +46,7 @@ papers:
     title: 'Improving spectral, spatial, and mechanistic resolution using Fourier transform nonlinear optics: a tutorial review'
     year: '2022'
   YwJsYsMAAAAJ:_FxGoFyzp5QC:
-    citations: 27
+    citations: 26
     title: Single-molecule spectroscopy and super-resolution mapping of physicochemical parameters in living cells
     year: '2024'
   YwJsYsMAAAAJ:d1gkVwhDpl0C:
@@ -62,8 +62,8 @@ papers:
     title: Elucidating the Interplay of Optical Function and Structure in Nanomaterials with Nonlinear Optical Microscopy
     year: '2022'
   YwJsYsMAAAAJ:u-x6o8ySG0sC:
-    citations: 59
-    title: Unexpected near-infrared to visible nonlinear optical properties from 2-D polar metals
+    citations: 58
+    title: "Unexpected Near-Infrared to Visible Nonlinear Optical Properties from 2\u2011D Polar Metals"
     year: '2020'
   YwJsYsMAAAAJ:u5HHmVD_uO8C:
     citations: 11
