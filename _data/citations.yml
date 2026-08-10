@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-07'
+  last_updated: '2026-08-10'
 papers:
   YwJsYsMAAAAJ:0EnyYjriUFMC:
     citations: 87
@@ -14,8 +14,8 @@ papers:
     title: Effect of etching on the oxidation of zinc selenide surfaces characterized by X-ray photoelectron spectroscopy
     year: '2020'
   YwJsYsMAAAAJ:IjCSPb-OGe4C:
-    citations: 15
-    title: "Atomic-level structure determines electron\u2013phonon scattering rates in 2-D polar metal heterostructures"
+    citations: 16
+    title: "Atomic-Level Structure Determines Electron\u2013Phonon Scattering Rates in 2\u2011D Polar Metal Heterostructures"
     year: '2021'
   YwJsYsMAAAAJ:Se3iqnhoufwC:
     citations: 7
@@ -30,11 +30,11 @@ papers:
     title: Nonlinear Fourier-Transform Spectroscopy of Single Gold Nanoparticles
     year: '2021'
   YwJsYsMAAAAJ:W7OEmFMy1HYC:
-    citations: 237
+    citations: 238
     title: Active pixel sensor matrix based on monolayer MoS2 phototransistor array
     year: '2022'
   YwJsYsMAAAAJ:WF5omc3nYNoC:
-    citations: 344
+    citations: 350
     title: Recent advances in 2D material theory, synthesis, properties, and applications
     year: '2023'
   YwJsYsMAAAAJ:Y0pCki6q_DkC:
@@ -44,7 +44,7 @@ papers:
   YwJsYsMAAAAJ:YsMSGLbcyi4C:
     citations: 4
     title: 'Improving spectral, spatial, and mechanistic resolution using Fourier transform nonlinear optics: a tutorial review'
-    year: '2022'
+    year: '2023'
   YwJsYsMAAAAJ:_FxGoFyzp5QC:
     citations: 26
     title: Single-molecule spectroscopy and super-resolution mapping of physicochemical parameters in living cells
