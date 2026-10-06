@@ -34,7 +34,7 @@ If you are not yet a graduate student at UIUC, please apply for admission to the
 
 ### Postdocs
 
-Please send your CV and a short (~2 pages) description of your previous research and interest in the group to [msteves@illinois.edu](mailto:msteves@illinois.edu).
+We have an open postdoc position — see the [full job ad]({{ '/assets/pdf/StevesPostdocAd_Sept2026.pdf' | relative_url }}) for details. Please send your CV and a short (~2 pages) description of your previous research and interest in the group to [msteves@illinois.edu](mailto:msteves@illinois.edu).
 
 ---
 
